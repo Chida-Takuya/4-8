@@ -19,7 +19,7 @@
     	<br><%= f.submit 'Update Book' %>
 		<% end %>
 
-		<%= link_to "Show", post_path(@post.id), class:'show_#{id}' %> |
-		<%= link_to "Back", posts_path(@post.id), class:'back_#{id}' %>
+		<%= link_to "Show", post_path(@post.id) class:"show_#{@post.id}" %> |
+		<%= link_to "Back", posts_path(@post.id) class:"back_#{@post.id}" %>
 	</body>
 </html>
